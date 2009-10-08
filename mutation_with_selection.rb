@@ -73,6 +73,3 @@ class EvolutionMachine
   end
 end
 
-# Example:
-   machine = EvolutionMachine.new(:max_children => 1000)
-   machine.evolve("Bananas disprove evolution!", "Methinks you're an idiot.")

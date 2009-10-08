@@ -46,30 +46,3 @@ class EvolutionMachine2D < EvolutionMachine
   end
 end
 
-start = <<-END
-###############
-###############
-###############
-###############
-###############
-###############
-###############
-END
-
-finish = <<-END
-   #########   
- #           # 
-#    #   #    #
-#      #      #
-#   |_____|   #
-  #          # 
-    #######    
-END
-
-# If we allow all ascii characters
-# this will take way too long to run.
-characters = [' ', '#', '_', '|']
-
-machine = EvolutionMachine2D.new(:characters => characters)
-machine.evolve(start.chop, finish.chop)
-
