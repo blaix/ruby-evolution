@@ -1,3 +1,5 @@
+require 'mutation_with_selection_2d'
+
 start = <<-END
 ###############
 ###############
