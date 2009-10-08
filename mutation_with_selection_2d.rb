@@ -72,3 +72,4 @@ characters = [' ', '#', '_', '|']
 
 machine = EvolutionMachine2D.new(:characters => characters)
 machine.evolve(start.chop, finish.chop)
+

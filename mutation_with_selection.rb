@@ -16,6 +16,7 @@ class EvolutionMachine
   def evolve(phrase, target)
     normalize(phrase, target)
     puts phrase
+    gets
     while(phrase != target)
       sleep(@sleep)
       children = procreate(phrase)
@@ -73,5 +74,5 @@ class EvolutionMachine
 end
 
 # Example:
-#   machine = EvolutionMachine.new(:max_children => 10000, :sleep => 0.1)
-#   machine.evolve("Bananas disprove evolution!", "Methinks you're an idiot.")
+   machine = EvolutionMachine.new(:max_children => 1000)
+   machine.evolve("Bananas disprove evolution!", "Methinks you're an idiot.")
