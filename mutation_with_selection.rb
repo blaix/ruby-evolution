@@ -1,5 +1,9 @@
 # Simple implementation of Dawkin's "weasel" program in ruby.
 # http://en.wikipedia.org/wiki/Methinks_it_is_a_weasel
+#
+# Demonstrating the power of random mutation + selection
+# as compared to blind chance.
+#
 # - Justin Blake <justin@adsdevshop.com>
 
 class EvolutionMachine
@@ -69,5 +73,5 @@ class EvolutionMachine
 end
 
 # Example:
-#   machine = EvolutionMachine.new
-#   machine.evolve("What is it?", "Methinks it is a weasel!")
+#   machine = EvolutionMachine.new(:max_children => 10000, :sleep => 0.1)
+#   machine.evolve("Bananas disprove evolution!", "Methinks you're an idiot.")
